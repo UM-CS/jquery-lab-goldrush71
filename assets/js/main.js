@@ -252,6 +252,7 @@
 				},
 				fadeSpeed: 300,
 				onPopupClose: function() { 
+					alert("Close?")
 					$body.removeClass('modal-active');  
 				},
 				onPopupOpen: function() { $body.addClass('modal-active'); },
