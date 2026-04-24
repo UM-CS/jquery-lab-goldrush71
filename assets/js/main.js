@@ -143,7 +143,7 @@
 			$window
 				.on('keyup', function(event) {
 
-					if (event.keyCode == 32
+					if (event.keyCode == 27
 					&&	$body.hasClass('content-active')) {
 
 						event.preventDefault();
@@ -251,7 +251,9 @@
 
 				},
 				fadeSpeed: 300,
-				onPopupClose: function() { $body.removeClass('modal-active'); },
+				onPopupClose: function() { 
+					$body.removeClass('modal-active');  
+				},
 				onPopupOpen: function() { $body.addClass('modal-active'); },
 				overlayOpacity: 0,
 				popupCloserText: '',
